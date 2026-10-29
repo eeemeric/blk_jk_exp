@@ -1,4 +1,4 @@
-# mnkybx_pBART.py
+# blk_jk_exp.py
 #   eemeric2@jhu.edu
 #   erik.emeric@gmail.com
 
@@ -89,7 +89,7 @@ class pBART:
 
         # self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN|pygame.SCALED)
-        pygame.display.set_caption("Pygame Primate Balloon Analogue Risk Task (pBART)")
+        pygame.display.set_caption("Blackjack Experiment")
         self.clock = pygame.time.Clock()
         self.font_large = pygame.font.Font(None, 72)
         self.font_medium = pygame.font.Font(None, 48)
@@ -290,13 +290,13 @@ class pBART:
         self.screen.fill(GRAY_BG)
 
         # Title
-        title = self.font_large.render("Balloon Analogue Risk Task", True, BLACK)
+        title = self.font_large.render("Blackjack Experiment", True, BLACK)
         title_rect = title.get_rect(center=(SCREEN_WIDTH // 2, 80))
         self.screen.blit(title, title_rect)
 
         # Instructions
         instructions = [
-            "GOAL: Accumulate as many points as possible",
+            "GOAL: Accumulate as many points as possible without exceeding 20 (NOT 21!)",
             "",
             "RULES:",
             "• Each hand starts at 0 points",
@@ -310,11 +310,12 @@ class pBART:
             "• Press STAY anytime to cash out safely",
             "",
             "NOTE:",
-            "• The deck is shuffled every 6-12 hands."
+            "• The deck is shuffled every 6-12 hands.",
             "",
             "Press SPACE to begin"
         ]
-
+        # TODO: Remove or disable the shuffle instruction if not needed
+        
         y_position = 180
         for line in instructions:
             if line == "":

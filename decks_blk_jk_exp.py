@@ -1,4 +1,4 @@
-# decks_pBART.py
+# decks_blk_jk_exp.py
 # eemeric2@jhu.edu
 # erik.emeric@gmail.com
 import numpy as np
