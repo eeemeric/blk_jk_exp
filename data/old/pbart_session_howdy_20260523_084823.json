@@ -1,0 +1,41 @@
+{
+  "subject_id": "howdy",
+  "session_timestamp": "20260523_084823",
+  "total_sequences": 1,
+  "total_tokens_accumulated": 13,
+  "trials": [
+    {
+      "sequence_number": 1,
+      "trial_number": 1,
+      "choice": "HIT",
+      "tokens_earned": 3,
+      "sequence_total": 3,
+      "result": "CONTINUE",
+      "total_accumulated": 0,
+      "reaction_time_ms": 2016.6666666666665,
+      "timestamp": ""
+    },
+    {
+      "sequence_number": 1,
+      "trial_number": 2,
+      "choice": "HIT",
+      "tokens_earned": 10,
+      "sequence_total": 13,
+      "result": "CONTINUE",
+      "total_accumulated": 0,
+      "reaction_time_ms": 900.0,
+      "timestamp": ""
+    },
+    {
+      "sequence_number": 1,
+      "trial_number": 3,
+      "choice": "STAY",
+      "tokens_earned": 0,
+      "sequence_total": 13,
+      "result": "WIN",
+      "total_accumulated": 13,
+      "reaction_time_ms": 933.3333333333334,
+      "timestamp": ""
+    }
+  ]
+}

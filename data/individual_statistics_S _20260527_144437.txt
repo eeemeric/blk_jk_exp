@@ -1,0 +1,64 @@
+
+============================================================
+SUMMARY STATISTICS
+============================================================
+
+Total trials: 198
+Total sequences: 51
+Total tokens accumulated: 742
+
+------------------------------------------------------------
+HIT vs STAY REACTION TIMES
+------------------------------------------------------------
+
+HIT trials: n=152, Mean RT=1113.8ms (SD=684.7)
+STAY trials: n=46, Mean RT=1589.1ms (SD=1646.5)
+
+Independent t-test:
+  t(196) = -2.848, p = 0.0049
+  ✓ SIGNIFICANT difference between HIT and STAY RTs (p < 0.05)
+  Cohen's d = -0.479
+
+Mann-Whitney U test (non-parametric):
+  U = 2514.5, p = 0.0040
+
+------------------------------------------------------------
+REACTION TIME BY TOKENS AT TRIAL ONSET (BINNED: 0-5, 6-10, 11-15, 16-20)
+------------------------------------------------------------
+
+Token Bin    | N Trials | Mean RT (ms) | SD (ms)
+--------------------------------------------------
+0-5          |       91 |       1164.8 |    705.5
+6-10         |       47 |       1046.5 |    658.5
+11-15        |       30 |       1682.8 |   2013.6
+16-20        |       30 |       1224.4 |    596.5
+
+------------------------------------------------------------
+KRUSKAL-WALLIS TEST: Reaction Time Across Token Bins
+------------------------------------------------------------
+
+Kruskal-Wallis H-test:
+  H = 6.356, p = 0.0955
+  Comparing 4 token bins
+  ✗ No significant difference in RTs across token bins (p >= 0.05)
+  η² = 0.0173 (effect size)
+
+------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Mann-Whitney U with Bonferroni)
+------------------------------------------------------------
+
+Bonferroni-corrected alpha: 0.008333
+(Original alpha = 0.05, Number of comparisons = 6)
+
+Token Bin Comparison    | U-statistic | p-value | Bonferroni Sig?
+----------------------------------------------------------------------
+0-5          vs 6-10         |      2468.0 | 0.139274 | ✗
+0-5          vs 11-15        |      1164.0 | 0.228704 | ✗
+0-5          vs 16-20        |      1151.5 | 0.200986 | ✗
+6-10         vs 11-15        |       523.5 | 0.058606 | ✗
+6-10         vs 16-20        |       514.5 | 0.047140 | ✗
+11-15        vs 16-20        |       469.0 | 0.784439 | ✗
+
+No pairwise differences survive Bonferroni correction.
+
+============================================================

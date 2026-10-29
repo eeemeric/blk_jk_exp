@@ -1,0 +1,66 @@
+
+============================================================
+SUMMARY STATISTICS
+============================================================
+
+Total trials: 333
+Total sequences: 101
+Total tokens accumulated: 1622
+
+------------------------------------------------------------
+HIT vs STAY REACTION TIMES
+------------------------------------------------------------
+
+HIT trials: n=235, Mean RT=632.8ms (SD=294.5)
+STAY trials: n=98, Mean RT=690.6ms (SD=363.7)
+
+Independent t-test:
+  t(331) = -1.521, p = 0.1291
+  ✗ No significant difference between HIT and STAY RTs (p >= 0.05)
+  Cohen's d = -0.183
+
+Mann-Whitney U test (non-parametric):
+  U = 10598.0, p = 0.2520
+
+------------------------------------------------------------
+REACTION TIME BY TOKENS AT TRIAL ONSET (BINNED: 0-5, 6-10, 11-15, 16-20)
+------------------------------------------------------------
+
+Token Bin    | N Trials | Mean RT (ms) | SD (ms)
+--------------------------------------------------
+0-5          |      138 |        585.3 |    258.4
+6-10         |       86 |        673.4 |    314.7
+11-15        |       46 |        797.8 |    448.6
+16-20        |       63 |        650.8 |    287.1
+
+------------------------------------------------------------
+KRUSKAL-WALLIS TEST: Reaction Time Across Token Bins
+------------------------------------------------------------
+
+Kruskal-Wallis H-test:
+  H = 8.709, p = 0.0334
+  Comparing 4 token bins
+  ✓ SIGNIFICANT difference in RTs across token bins (p < 0.05)
+     Subjects respond differently depending on accumulated tokens
+  η² = 0.0174 (effect size)
+
+------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Mann-Whitney U with Bonferroni)
+------------------------------------------------------------
+
+Bonferroni-corrected alpha: 0.008333
+(Original alpha = 0.05, Number of comparisons = 6)
+
+Token Bin Comparison    | U-statistic | p-value | Bonferroni Sig?
+----------------------------------------------------------------------
+0-5          vs 6-10         |      5108.5 | 0.080076 | ✗
+0-5          vs 11-15        |      2342.0 | 0.007820 | ✓
+0-5          vs 16-20        |      3728.5 | 0.105942 | ✗
+6-10         vs 11-15        |      1739.5 | 0.255474 | ✗
+6-10         vs 16-20        |      2735.5 | 0.920370 | ✗
+11-15        vs 16-20        |      1676.0 | 0.164432 | ✗
+
+Significant pairwise differences (after Bonferroni correction):
+  • 0-5 tokens: RT faster than 11-15 tokens (585 vs 798 ms, p=0.007820)
+
+============================================================

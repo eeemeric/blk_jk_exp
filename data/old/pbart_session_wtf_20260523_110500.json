@@ -1,0 +1,52 @@
+{
+  "subject_id": "wtf",
+  "session_timestamp": "20260523_110500",
+  "total_sequences": 1,
+  "total_tokens_accumulated": 18,
+  "trials": [
+    {
+      "sequence_number": 1,
+      "trial_number": 1,
+      "choice": "HIT",
+      "tokens_earned": 10,
+      "sequence_total": 10,
+      "result": "CONTINUE",
+      "total_accumulated": 0,
+      "reaction_time_ms": 1266.6666666666665,
+      "timestamp": ""
+    },
+    {
+      "sequence_number": 1,
+      "trial_number": 2,
+      "choice": "HIT",
+      "tokens_earned": 2,
+      "sequence_total": 12,
+      "result": "CONTINUE",
+      "total_accumulated": 0,
+      "reaction_time_ms": 750.0,
+      "timestamp": ""
+    },
+    {
+      "sequence_number": 1,
+      "trial_number": 3,
+      "choice": "HIT",
+      "tokens_earned": 6,
+      "sequence_total": 18,
+      "result": "CONTINUE",
+      "total_accumulated": 0,
+      "reaction_time_ms": 1550.0,
+      "timestamp": ""
+    },
+    {
+      "sequence_number": 1,
+      "trial_number": 4,
+      "choice": "STAY",
+      "tokens_earned": 0,
+      "sequence_total": 18,
+      "result": "WIN",
+      "total_accumulated": 18,
+      "reaction_time_ms": 2133.3333333333335,
+      "timestamp": ""
+    }
+  ]
+}
